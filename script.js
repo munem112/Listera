@@ -34,6 +34,7 @@ function addTask() {
     // Append list item to the task list
     taskList.appendChild(listItem);
 
-    // Clear the input
+    // Clear the input value but keep the focus
     taskInput.value = '';
+    taskInput.focus(); // This keeps the keyboard open
 }
